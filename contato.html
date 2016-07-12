@@ -1,0 +1,59 @@
+<!doctype>
+<html lang ="pt-BR"> 
+	<head>
+	<meta charset="utf-8">
+		 <title> Introdução a HTML</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	<body>
+	     <div class="topo">
+			
+		<div class="logo">
+		<img src="img/logo.png" alt ="IFPI" title="IFPI"> <!--TITLE = para aparecer o nome quando passar o mouse por cima da imagem.	
+								      ALT= para aparecer no nome da imagem se o navegador não carregar a imagem. -->
+		 </div>
+		 <div class ="logotipo">
+		<h1>Técnico em informática- IFPI</h1> 		
+	    </div>
+	</div>
+
+	<div class="menu">
+	<ul> 
+	   <li> <a href="#"> Curso</a></li>
+	   <li> <a href="#">Professores </a></li>	
+           <li> <a href="#">Alunos	</a> </li>
+	   <li> <a href="#">Contatos </a></li>
+		<form> <input title="Pesquisar" placeholder="Pesquisar" class="input-direito" type="text" nam="find"></form>
+	</ul>
+		</div>
+
+	<div class="conteudo">
+		<form method="POST">
+			<fieldset>
+			<legend> Fale conosco </legend>
+			Nome: <br>
+			<label>Perfil</label>
+			<ul class="lista-radio">
+				<li> <input type="radio" name="perfil" value="x"> Aluno </li>
+				<li> <input type="radio" name="perfil" value="xx"> Professor </li>
+				<li> <input type="radio" name="perfil" value="xxx"> Engresso </li>
+				<li> <input type="radio" name="perfil" value="xxxx"> Outro </li>
+				</ul>
+
+				<label>Nome</label><br>
+			 	<input type="text" name="nome"><br>
+				<label>Senha</label><br>
+			 	<input type="password" name="senha"><br>
+				<button class="but"> Enviar</button>
+			</fieldset>
+		</form>
+
+		</div>
+	<div class="direita">
+
+     </div>
+	<div class="rodape"> 
+		</div>
+
+	</body>
+</html>
