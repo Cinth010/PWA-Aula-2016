@@ -30,20 +30,36 @@
 	<div class="conteudo">
 		<form method="POST">
 			<fieldset>
-			<legend> Fale conosco </legend>
-			Nome: <br>
-			<label>Perfil</label>
-			<ul class="lista-radio">
-				<li> <input type="radio" name="perfil" value="x"> Aluno </li>
-				<li> <input type="radio" name="perfil" value="xx"> Professor </li>
-				<li> <input type="radio" name="perfil" value="xxx"> Engresso </li>
-				<li> <input type="radio" name="perfil" value="xxxx"> Outro </li>
+				<legend> Fale conosco </legend>
+				<label>Perfil:</label>
+				<ul class="lista-radio">
+					<li> <input required type="radio" name="perfil" value="x"> Aluno </li>
+					<li> <input required type="radio" name="perfil" value="xx"> Professor </li>
+					<li> <input required type="radio" name="perfil" value="xxx"> Engresso </li>
+					<li> <input required type="radio" name="perfil" value="xxxx"> Outro </li>
 				</ul>
 
-				<label>Nome</label><br>
-			 	<input type="text" name="nome"><br>
-				<label>Senha</label><br>
-			 	<input type="password" name="senha"><br>
+				<label>Nome:</label>
+			 	<input required type="text" name="nome"><br>
+			 	<label>Data de Nascimento:</label>
+			 	<input required type="date" name="bday"><br>
+			 	<label>Email:</label>
+			 	<input required type="email" name="email"><br>
+			 	<label>Assunto:</label>
+			 	<select required>
+			 		<option value="">Selecione</option>
+			 		<option value="aula">Aula</option>
+			 		<option value="falta">Falta</option>
+			 		<option value="trabalho">Trabalho</option>
+			 	</select> <br>
+			 	<label>Mensagem:</label><br>
+			 	<textarea required class="form-item" cols="90" rows="10"></textarea><br>
+			 	<ul class="lista-checkbox">
+			 		<li>Deseja receber informações sobre:</li>
+			 		<li> <input type="checkbox" name="info" value="x"> Cursos </li>
+					<li> <input type="checkbox" name="info" value="xx"> Eventos </li>
+					<li> <input type="checkbox" name="info" value="xxx"> Bolsas </li>
+			 	</ul>
 				<button class="but"> Enviar</button>
 			</fieldset>
 		</form>
